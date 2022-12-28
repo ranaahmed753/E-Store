@@ -10,7 +10,7 @@ function ProductLists() {
     const { isLoading, products, error } = getProductsReducer;
     useEffect(() => {
         dispatch(getProducts());
-    }, []);
+    }, [dispatch]);
     return (
         <div className="product__lists">
             <div className="productLists__header">

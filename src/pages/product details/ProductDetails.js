@@ -25,7 +25,7 @@ function ProductDetails() {
     };
     useEffect(() => {
         dispatch(fetchSingleProduct(id));
-    }, []);
+    }, [dispatch, id]);
 
     return product ? (
         <div className="product__details">

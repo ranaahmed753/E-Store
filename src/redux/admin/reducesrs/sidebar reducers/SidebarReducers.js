@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export const sidebarReducers = (state = initialState, action) => {
-    const { type, payload } = action;
+    const { type } = action;
     switch (type) {
         case SidebarActionTypes.SWITCH_TO_OVERVIEW:
             return {

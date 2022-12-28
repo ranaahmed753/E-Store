@@ -3,14 +3,13 @@ import "./Payments.css";
 import { creditCard, paypal } from "../../assets";
 import CheckoutButton from "../checkout button/CheckoutButton";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
 
 function Payments() {
     const { allCarts } = useSelector((state) => state);
     const { carts } = allCarts;
     var totalPrice = 0;
     const countTotalPrice = () => {
-        carts.length != 0 &&
+        carts.length !== 0 &&
             carts.map((cart) => {
                 totalPrice = totalPrice + cart.price;
             });
@@ -37,6 +36,7 @@ function Payments() {
             </h3>
             <div className="card__details">
                 <img
+                    alt=""
                     src={paypal}
                     style={{
                         height: 50,
@@ -47,6 +47,7 @@ function Payments() {
                 />
 
                 <img
+                    alt=""
                     src={creditCard}
                     style={{
                         height: 50,

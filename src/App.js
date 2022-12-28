@@ -1,10 +1,5 @@
 import "./App.css";
-import {
-    BrowserRouter,
-    BrowserRouter as Router,
-    Route,
-    Routes,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductDetails from "./pages/product details/ProductDetails";
 import Header from "./components/header/Header";
 import ProductList from "./pages/products/product lists/ProductList";

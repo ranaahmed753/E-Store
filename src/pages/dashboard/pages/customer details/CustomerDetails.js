@@ -11,7 +11,7 @@ function CustomerDetails() {
     const { loading, customer, error } = customersReducer;
     useEffect(() => {
         dispatch(getCustomerById(id));
-    }, []);
+    }, [dispatch, id]);
 
     return !loading ? (
         <div className="customer__details">

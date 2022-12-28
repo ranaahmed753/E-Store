@@ -25,6 +25,7 @@ function Header() {
                     onClick={() => dispatch(switchToHomePage())}
                 >
                     <img
+                        alt=""
                         src={LOGO}
                         style={{
                             height: 50,

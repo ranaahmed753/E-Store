@@ -106,9 +106,9 @@ function TextButton({ name, link, onPress }) {
                         fontSize: 15,
                     }}
                 >
-                    {carts.length != 0 && name == "Cart"
+                    {carts.length !== 0 && name === "Cart"
                         ? "Cart{" + carts.length + "}"
-                        : name == "Cart" && "Cart"}
+                        : name === "Cart" && "Cart"}
                 </h3>
             </NavLink>
         );

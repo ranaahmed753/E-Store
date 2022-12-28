@@ -20,7 +20,7 @@ function UpdateProducts() {
     const { isUpdating } = submitProductsReducer;
     useEffect(() => {
         dispatch(getProductById(id));
-    }, [id]);
+    }, [dispatch, id]);
 
     const updateProductById = () => {
         if (title === "" || description === "" || price === "") {

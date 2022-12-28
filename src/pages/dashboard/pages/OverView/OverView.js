@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import OverViewItemCard from "../../components/overview item card/OverViewItemCard";
 import SalesTable from "../../components/sales table/SalesTable";
 import SellingProduct from "../../components/selling product/SellingProduct";
 import "./OverView.css";
 
 function OverView() {
-    const [sellingProducts, setSellingProducts] = useState([
+    const sellingProducts = [
         {
             name: "Winter Clothing",
             image: "https://i.pinimg.com/474x/35/86/72/3586727cf4b120614210278808caeb0e.jpg",
@@ -46,7 +46,7 @@ function OverView() {
             image: "https://i.postimg.cc/259swWhF/22723ede15755b068b7a355e0ad5d65e-headphone-clipart-beats-headphone-pencil-and-in-color-headphone-10.png",
             price: "$80",
         },
-    ]);
+    ];
     return (
         <div className="overview">
             <div className="overview__header">

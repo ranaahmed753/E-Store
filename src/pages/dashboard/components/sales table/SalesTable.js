@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SalesTable.css";
 
 function SalesTable() {
-    const [recentSales, setRecentSales] = useState([
+    const recentSales = [
         {
             date: "02 jan 2021",
             customer: "Alex Doe",
@@ -219,7 +219,7 @@ function SalesTable() {
             sales: "Pending",
             total: "$255.10",
         },
-    ]);
+    ];
     return (
         <table width="100%" style={{ marginLeft: 15 }}>
             <tbody>

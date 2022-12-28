@@ -12,7 +12,7 @@ function ProductList() {
 
     useEffect(() => {
         dispatch(fetchProducts());
-    }, []);
+    }, [dispatch]);
 
     return !loading ? (
         <div className="product__list">
