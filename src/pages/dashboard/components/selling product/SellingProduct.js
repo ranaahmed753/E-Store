@@ -1,4 +1,3 @@
-import { Avatar } from "@mui/material";
 import React from "react";
 import "./SellingProduct.css";
 
@@ -6,6 +5,7 @@ function SellingProduct({ name, image, price }) {
     return (
         <div className="selling__product">
             <img
+                alt=""
                 src={image}
                 style={{
                     height: 30,

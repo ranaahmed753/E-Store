@@ -8,7 +8,7 @@ function CartList() {
     const { allCarts } = useSelector((state) => state);
     const { carts } = allCarts;
 
-    return carts.length != 0 ? (
+    return carts.length !== 0 ? (
         <div className="cart__list">
             <div className="cart__list__left">
                 {carts.map((cart, index) => (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./CartItem.css";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
 import { removeFromCarts } from "../../../redux/actions/cart actions/CartActions";
@@ -18,6 +18,7 @@ function CartItem({ id, image, title, price, category, quantity, size }) {
         <div className="cart__item">
             <div className="cart__item__left">
                 <img
+                    alt=""
                     src={image}
                     style={{
                         objectFit: "contain",
@@ -42,7 +43,6 @@ function CartItem({ id, image, title, price, category, quantity, size }) {
                     style={{
                         fontFamily: "Poppins",
                         fontSize: 14,
-                        marginTop: -5,
                         textAlign: "justify",
                         marginTop: -10,
                     }}
@@ -63,7 +63,6 @@ function CartItem({ id, image, title, price, category, quantity, size }) {
                     style={{
                         fontFamily: "Poppins",
                         fontSize: 12,
-                        marginTop: -5,
                         marginTop: -10,
                     }}
                 >

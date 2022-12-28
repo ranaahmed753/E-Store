@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Product.css";
 import { toast } from "react-toastify";
 import { NavLink } from "react-router-dom";
@@ -16,10 +16,11 @@ function Product({ id, image, price, title }) {
 
     const deleteProductById = () => {
         dispatch(deleteProduct(id));
-        toast.success("Product Deleting....", {
-            position: toast.POSITION.BOTTOM_CENTER,
-            autoClose: 3000,
-        });
+        isDeleting &&
+            toast.success("Product Deleting....", {
+                position: toast.POSITION.BOTTOM_CENTER,
+                autoClose: 3000,
+            });
 
         setTimeout(() => {
             window.location.reload();

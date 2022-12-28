@@ -1,6 +1,6 @@
 import React from "react";
 import "./SidebarItem.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ForwardIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 

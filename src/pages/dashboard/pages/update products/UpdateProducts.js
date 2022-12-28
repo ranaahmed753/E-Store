@@ -16,13 +16,12 @@ function UpdateProducts() {
     const { getProductsReducer, submitProductsReducer } = useSelector(
         (state) => state
     );
-    const { product, error, loading } = getProductsReducer;
+    const { product, error } = getProductsReducer;
     const { isUpdating } = submitProductsReducer;
     useEffect(() => {
         dispatch(getProductById(id));
-    }, []);
+    }, [id]);
 
-    // console.log(error);
     const updateProductById = () => {
         if (title === "" || description === "" || price === "") {
             toast.warn("some fields may be empty!!", {

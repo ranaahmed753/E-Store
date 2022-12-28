@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Dashboard.css";
 import Avatar from "@mui/material/Avatar";
-import { LOGO } from "../../assets/index.js";
-import { requirePropFactory } from "@mui/material";
 import SidebarItem from "./components/sidebar items/SidebarItem";
-import { Outlet, Route } from "react-router-dom";
-import CustomerDetails from "./pages/customer details/CustomerDetails";
+import { Outlet} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import {

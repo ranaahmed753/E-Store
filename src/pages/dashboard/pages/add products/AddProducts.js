@@ -1,7 +1,5 @@
-import { requirePropFactory } from "@mui/material";
 import React, { useState } from "react";
 import "./AddProducts.css";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 import AddProductInput from "../../components/add product input/AddProductInput";
