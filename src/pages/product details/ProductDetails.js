@@ -32,6 +32,7 @@ function ProductDetails() {
             <ToastContainer hideProgressBar />
             <div className="productDetails__left">
                 <img
+                    alt=""
                     src={product !== undefined && product.image}
                     style={{
                         width: "100%",

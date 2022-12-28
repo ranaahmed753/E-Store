@@ -27,6 +27,7 @@ function CustomerDetails() {
             </div>
             <div className="customerDetails__body">
                 <img
+                    alt=""
                     src={customer !== undefined && customer.avatar}
                     style={{
                         height: 400,

@@ -10,7 +10,7 @@ function CustomerLists() {
     const { customers, isLoading, error } = customersReducer;
     useEffect(() => {
         dispatch(getCustomers());
-    }, []);
+    }, [dispatch]);
 
     return !isLoading ? (
         <div className="customer__lists">

@@ -11,7 +11,7 @@ function Payments() {
     const countTotalPrice = () => {
         carts.length !== 0 &&
             carts.map((cart) => {
-                totalPrice = totalPrice + cart.price;
+                return (totalPrice = totalPrice + cart.price);
             });
     };
     countTotalPrice();
