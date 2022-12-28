@@ -1,0 +1,30 @@
+.quantity__counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity__counter > .add_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50;
+    width: 80;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid gray;
+}
+
+.quantity__counter > .minus_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50;
+    width: 80;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 10px;
+    border: 1px solid gray;
+}

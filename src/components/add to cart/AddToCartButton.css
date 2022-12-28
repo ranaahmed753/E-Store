@@ -1,0 +1,16 @@
+.add_to_cart {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add_to_cart:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}

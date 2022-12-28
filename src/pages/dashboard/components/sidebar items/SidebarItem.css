@@ -1,0 +1,14 @@
+.text {
+    text-decoration: "none";
+    display: "flex";
+    flex-direction: "row";
+    align-items: "center";
+    justify-content: "space-between";
+    cursor: "pointer";
+    margin-left: 10;
+    margin-right: 10;
+}
+
+.text:hover {
+    background-color: #f2f7ff;
+}

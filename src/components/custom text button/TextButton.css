@@ -1,0 +1,40 @@
+.inactive__textbutton {
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-left: 5px;
+}
+
+.active__textbutton {
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #e8f0fe;
+    margin-left: 5px;
+}
+
+.text__button :hover {
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: lightgrey;
+}

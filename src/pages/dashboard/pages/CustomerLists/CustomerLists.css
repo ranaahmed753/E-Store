@@ -1,0 +1,23 @@
+.customer__lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer__lists > .customerList__header {
+    background-color: white;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.customer__lists > .customerList__body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 40px;
+    flex: 1;
+}

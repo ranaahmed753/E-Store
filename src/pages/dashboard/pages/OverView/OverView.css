@@ -1,0 +1,55 @@
+.overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.overview > .overview__header {
+    background-color: white;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.overview > .overview__body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.overview > .overview__body > .overviewBody__Items {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+}
+
+.overview > .overview__body > .overviewBody__feed {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.overview > .overview__body > .overviewBody__feed > .overviewBodyFeed__left {
+    flex: 0.7;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.overview > .overview__body > .overviewBody__feed > .overviewBodyFeed__right {
+    flex: 0.3;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    position: sticky;
+    top: 100px;
+    height: 100%;
+}

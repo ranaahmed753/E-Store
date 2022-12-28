@@ -1,0 +1,24 @@
+.register {
+    flex: 1;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f2f7ff;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.register > .register__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 30%;
+    width: 40%;
+    flex: 0.4;
+    margin: auto;
+}
