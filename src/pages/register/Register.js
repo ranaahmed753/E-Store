@@ -7,7 +7,7 @@ import { signup } from "../../redux/actions/auth actions/AuthActions";
 function Register() {
     const dispatch = useDispatch();
     const { authReducer } = useSelector((state) => state);
-    const { isLoading, error, user } = authReducer;
+    const { isLoading, user } = authReducer;
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
