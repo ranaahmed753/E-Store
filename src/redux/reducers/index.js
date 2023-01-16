@@ -6,6 +6,7 @@ import { sidebarReducers } from "../admin/reducesrs/sidebar reducers/SidebarRedu
 import { submitProductReducers } from "../admin/reducesrs/submit product reducers/SubmitProductReducers";
 import { getProductsReducer } from "../admin/reducesrs/get products reducer/GetProductsReducer";
 import { customersReducer } from "../admin/reducesrs/customers reducer/CustomersReducer";
+import { authReducer } from "../reducers/auth reducer/AuthReducers";
 
 export const reducers = combineReducers({
     allProducts: productReducers,
@@ -15,4 +16,5 @@ export const reducers = combineReducers({
     submitProductsReducer: submitProductReducers,
     getProductsReducer: getProductsReducer,
     customersReducer: customersReducer,
+    authReducer: authReducer,
 });

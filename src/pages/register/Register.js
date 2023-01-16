@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./Register.css";
 import { toast } from "react-toastify";
+import { useSelector, useDispatch } from "react-redux";
+import { signup } from "../../redux/actions/auth actions/AuthActions";
 
 function Register() {
+    const dispatch = useDispatch();
+    const { authReducer } = useSelector((state) => state);
+    const { isLoading, error, user } = authReducer;
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -21,10 +26,28 @@ function Register() {
                 autoClose: 1000,
             });
         } else {
-            toast.success("api calling here", {
-                position: toast.POSITION.BOTTOM_CENTER,
-                autoClose: 1000,
-            });
+            if (password === confirmPassword) {
+                dispatch(
+                    signup({
+                        name: name,
+                        email: email,
+                        password: password,
+                        passwordConfirm: confirmPassword,
+                        role: type,
+                    })
+                );
+                if (!isLoading && user) {
+                    toast.success("User creatted Successfully", {
+                        position: toast.POSITION.BOTTOM_CENTER,
+                        autoClose: 1000,
+                    });
+                }
+            } else {
+                toast.warn("password not matched!!", {
+                    position: toast.POSITION.BOTTOM_CENTER,
+                    autoClose: 1000,
+                });
+            }
         }
     };
 
@@ -144,7 +167,7 @@ function Register() {
                     }}
                     onClick={() => createUser()}
                 >
-                    Register
+                    {isLoading ? "Creating User...." : "Register"}
                 </button>
             </div>
         </div>
