@@ -2,7 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import Avatar from "@mui/material/Avatar";
 import SidebarItem from "./components/sidebar items/SidebarItem";
-import { Outlet, useNavigate} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import {
