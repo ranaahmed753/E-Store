@@ -32,7 +32,16 @@ function App() {
                     <Route exact path="/cart" element={<CartList />} />
 
                     <Route exact path="/dashboard/*" element={<Dashboard />}>
-                        <Route exact path="overview" element={<OverView />} />
+                        <Route
+                            exact
+                            path=""
+                            element={<OverView />}
+                        />
+                        <Route
+                            exact
+                            path="overview"
+                            element={<OverView />}
+                        />
                         <Route
                             exact
                             path="productlists"

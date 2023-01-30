@@ -3,8 +3,14 @@ import OverViewItemCard from "../../components/overview item card/OverViewItemCa
 import SalesTable from "../../components/sales table/SalesTable";
 import SellingProduct from "../../components/selling product/SellingProduct";
 import "./OverView.css";
+import { switchToOverview } from "../../../../redux/admin/actions/sidebar actions/SidebarActions";
+import { useDispatch } from "react-redux";
 
 function OverView() {
+    const dispatch = useDispatch();
+    dispatch(switchToOverview())
+    // route switched
+
     const sellingProducts = [
         {
             name: "Winter Clothing",

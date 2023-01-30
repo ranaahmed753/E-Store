@@ -71,8 +71,12 @@ function Header() {
                 />
                 <TextButton
                     name="Dashboard"
+                    // link="/dashboard/overview"
+                    // onPress={() => dispatch(switchToOverview())}
                     link="/dashboard"
                     onPress={() => dispatch(switchToDashboard())}
+
+                    // link changed
                 />
                 <TextButton
                     name="Cart"
